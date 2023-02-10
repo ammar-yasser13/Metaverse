@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Eudoxus Sans,sans-serif;
+  }
+}
+/* Global */
+body{
+  color: white;
+}
+h1,h2,h3{
+  font-weight: bold;
+}
+h1{
+  font-size: 46px;
+  line-height: normal;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 26px;
+}
+p{
+  color: #c7c7c7;
+}
+b{
+  color: white;
+}
+.gradient-02 {
+  background: linear-gradient(97.86deg,#a509ff 0%,#34acc7 53.65%,#a134c7 100%);
+}
+.gradient-01 {
+  background: linear-gradient(180deg,rgba(255,255,255,.04) 0%,rgba(255,255,255,0) 100%);
+}
+.glassmorphism {
+  background: rgba(255,255,255,.25);
+  box-shadow: 0 8px 32px #1f26875e;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.18);
+}
+.card.active {
+  transition: 500ms;
+  height: 500px;
+}
+.card.unActive {
+  transition: 500ms;
+  height: 200px;
+}
+.card.active *{
+  display: block;
+}
+.card.active h3{
+  width: 100%;
+  transform: rotate(0deg);
+}
+.card.active .content{
+  background-color: #00000080;
+  
+}
+p {
+  font-size: 18px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Enter your code */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+    line-height: 114px;
+  }
+  h2{
+    font-size: 64px;
+
+  }
+  p.lead{
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 144px;
+    line-height: 150px;
+  }
+  h2{
+    font-size: 64px;
+  }
+  p.lead{
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .card.active {
+    transition: 500ms;
+    width: 500px;
+    height: 500px;
+  }
+  .card.unActive {
+    transition: 500ms;
+    width: 200px;
+    height: 500px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Enter your code */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Enter your code */
+}
