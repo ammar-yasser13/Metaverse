@@ -3,5 +3,5 @@
 I created a template similar to the original site just to practice and gain experience.
 ## Skills used in the project
 - html/css
-- bootstrap 5
+- tailwindcss
 - react js
